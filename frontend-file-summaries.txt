@@ -1,0 +1,8 @@
+{
+  "frontend/src/index.css": "Global stylesheet with dark charcoal and gold OKLCH color tokens, Google Fonts imports (Bebas Neue, Oswald, Inter), and utility classes for the industrial tycoon theme including gold glow, shadow, and pattern effects.",
+  "frontend/tailwind.config.js": "Extended Tailwind config mapping gold/charcoal color tokens, custom font families (display/heading/body), gold box-shadow utilities, and fade-in/shimmer keyframe animations.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations — getAllPlayers, getPlayer, createPlayer, and updateScore — with proper cache invalidation.",
+  "frontend/src/components/AddPlayerForm.tsx": "Controlled form component for adding new moguls with inline validation, loading state on the submit button, and gold-accented industrial styling.",
+  "frontend/src/components/PlayerList.tsx": "Leaderboard component that renders sorted players with rank badges, coin icons, score display, and hover-revealed ±10 score adjustment controls with loading states.",
+  "frontend/src/App.tsx": "Main app component with a banner header, stats bar, collapsible add-mogul form section, and the empire rankings leaderboard, plus a branded footer with caffeine.ai attribution."
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Frontend Implementation Plan for Makeshift Moguls",
+  "requirements": [
+    {
+      "id": "REQ-2",
+      "summary": "Build a React frontend that connects to the backend, displays a list of moguls/players, allows adding new entries, and shows names and scores",
+      "acceptanceCriteria": [
+        "The home page renders a list of existing entries fetched from the backend.",
+        "A form allows the user to submit a new entry name, which persists to the backend.",
+        "The list updates after a new entry is added.",
+        "No console errors during normal usage."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Create global stylesheet with dark charcoal and gold color scheme using CSS custom properties for the tycoon theme. Define --background, --foreground, --primary, --accent, and other design tokens to support the industrial mogul visual identity."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the main App component that serves as the home page. Include a header section with the generated banner image (frontend/public/assets/generated/makeshift-moguls-banner.dim_1200x300.png), a form to add new players by name, and a list display of all players with their names and scores fetched from the backend using getAllPlayers(). Handle form submission with createPlayer() and refresh the list after adding."
+        },
+        {
+          "path": "frontend/src/components/PlayerList.tsx",
+          "operation": "create",
+          "description": "Create a PlayerList component that receives an array of players and renders them in a styled list format. Display each player's name and score with appropriate typography and styling that matches the industrial tycoon theme. Use the mogul coin icon (frontend/public/assets/generated/mogul-coin-icon.dim_128x128.png) as a visual element next to scores."
+        },
+        {
+          "path": "frontend/src/components/AddPlayerForm.tsx",
+          "operation": "create",
+          "description": "Create an AddPlayerForm component with a controlled input for player name and a submit button. Handle form submission by calling the backend's createPlayer() method and triggering a callback to refresh the player list. Style the form with bold typography and gold accents consistent with the mogul theme."
+        },
+        {
+          "path": "frontend/public/assets/generated/makeshift-moguls-banner.dim_1200x300.png",
+          "operation": "create",
+          "description": "Wire the generated dark industrial banner image with bold gold lettering and gritty texture background into the App component header as a static asset. This file will be created by the image generation process."
+        },
+        {
+          "path": "frontend/public/assets/generated/mogul-coin-icon.dim_128x128.png",
+          "operation": "create",
+          "description": "Wire the generated gold coin stack icon illustration on dark background into the PlayerList component to visually represent scores. This file will be created by the image generation process."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Apply a bold, industrial tycoon visual theme with dark charcoal and gold palette, strong typography, gritty textures, and confident layout across the entire frontend",
+      "acceptanceCriteria": [
+        "All pages share the same dark-charcoal-and-gold color scheme.",
+        "Typography is bold and large for headings, with clear hierarchy.",
+        "No default browser or generic light-mode styling is visible."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define CSS custom properties for the dark charcoal and gold color palette. Set --background to dark charcoal (#1a1a1a or similar), --primary and --accent to gold tones (#d4af37 or similar), and configure bold typography with appropriate font weights. Add subtle texture or geometric pattern backgrounds where appropriate. Ensure all text colors provide strong contrast on dark backgrounds."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the Tailwind configuration to support the mogul theme. Map color tokens to the dark charcoal and gold palette defined in index.css. Configure font families for bold, confident typography with strong hierarchy. Add custom spacing or shadow utilities if needed to achieve the industrial tycoon aesthetic."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the industrial tycoon theme styling to the App component layout. Use bold, large headings with the gold accent color, dark charcoal backgrounds, and confident spacing. Ensure the banner image and all child components follow the consistent visual language of a deal-making mogul empire."
+        },
+        {
+          "path": "frontend/src/components/PlayerList.tsx",
+          "operation": "modify",
+          "description": "Style the PlayerList component with the dark charcoal and gold theme. Use bold typography for player names, clear visual hierarchy, and gold accents for scores. Apply gritty textures or geometric patterns as backgrounds for list items to reinforce the industrial aesthetic."
+        },
+        {
+          "path": "frontend/src/components/AddPlayerForm.tsx",
+          "operation": "modify",
+          "description": "Style the AddPlayerForm with the mogul theme. Use bold labels, dark charcoal input backgrounds with gold borders/focus states, and a prominent gold submit button with confident typography. Ensure the form feels like part of a tycoon empire interface."
+        }
+      ]
+    }
+  ]
+}

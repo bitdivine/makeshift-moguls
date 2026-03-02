@@ -1,0 +1,78 @@
+{
+  "kind": "build_request",
+  "title": "Initial build of Makeshift Moguls app",
+  "projectName": "Makeshift Moguls",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a Motoko backend actor with a basic data model suitable for a business/mogul-themed platform. Include at minimum: a persistent store for named entities (e.g., players or users with a name and score), and query/update functions to create, read, and list them.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Makeshift Moguls"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend actor compiles and deploys successfully.",
+        "Functions to create an entry, retrieve it by ID, and list all entries are available and callable."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a React frontend for Makeshift Moguls that connects to the backend canister. The app should display a list of entities (e.g., moguls/players), allow adding a new entry with a name, and show each entry's name and score.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Makeshift Moguls"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The home page renders a list of existing entries fetched from the backend.",
+        "A form allows the user to submit a new entry name, which persists to the backend.",
+        "The list updates after a new entry is added.",
+        "No console errors during normal usage."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a bold, industrial tycoon visual theme across the entire frontend. Use a dark charcoal and gold color palette with strong typography, gritty textures or subtle geometric patterns, and a confident layout that feels like a deal-making mogul empire. Enforce this style consistently across all pages and components.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Makeshift Moguls"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages share the same dark-charcoal-and-gold color scheme.",
+        "Typography is bold and large for headings, with clear hierarchy.",
+        "No default browser or generic light-mode styling is visible."
+      ]
+    }
+  ],
+  "constraints": [
+    "All Motoko logic must reside in a single actor in backend/main.mo.",
+    "Do not edit any files under frontend/src/hooks/ or frontend/src/components/ui."
+  ],
+  "nonGoals": [
+    "Real-time features or WebSocket communication.",
+    "Third-party authentication (only Internet Identity if auth is needed).",
+    "External databases or cloud services."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dark industrial banner with bold gold lettering and a gritty texture background, suitable for a tycoon-themed app header (makeshift-moguls-banner.dim_1200x300.png)",
+      "Gold coin stack icon illustration on a dark background (mogul-coin-icon.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

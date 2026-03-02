@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Dark industrial banner with bold gold lettering and a gritty texture background, suitable for a tycoon-themed app header (makeshift-moguls-banner.dim_1200x300.png)\n- Gold coin stack icon illustration on a dark background (mogul-coin-icon.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-react-frontend-for-makeshift-moguls-that-connects-to-the-backend-canister-the-app-should-display-a-list-of-entities-e-g-moguls-players-allow-adding-a-new-entry-with-a-name-and-show-each-entry-s-name-and-score",
+      "title": "Build a React frontend for Makeshift Moguls that connects to the backend canister. The app should display a list of entities (e.g., moguls/players), allow adding a new entry with a name, and show each entry's name and score.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-industrial-tycoon-visual-theme-across-the-entire-frontend-use-a-dark-charcoal-and-gold-color-palette-with-strong-typography-gritty-textures-or-subtle-geometric-patterns-and-a-confident-layout-that-feels-like-a-deal-making-mogul-empire-enforce-this-style-consistently-across-all-pages-and-components",
+      "title": "Apply a bold, industrial tycoon visual theme across the entire frontend. Use a dark charcoal and gold color palette with strong typography, gritty textures or subtle geometric patterns, and a confident layout that feels like a deal-making mogul empire. Enforce this style consistently across all pages and components.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a Motoko backend actor with a basic data model suitable for a business/mogul-themed platform. Include at minimum: a persistent store for named entities (e.g., players or users with a name and score), and query/update functions to create, read, and list them.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Makeshift Moguls",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-react-frontend-for-makeshift-moguls-that-connects-to-the-backend-canister-the-app-should-display-a-list-of-entities-e-g-moguls-players-allow-adding-a-new-entry-with-a-name-and-show-each-entry-s-name-and-score",
+      "featureTitle": "Build a React frontend for Makeshift Moguls that connects to the backend canister. The app should display a list of entities (e.g., moguls/players), allow adding a new entry with a name, and show each entry's name and score.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AddPlayerForm.tsx",
+        "frontend/src/components/PlayerList.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-bold-industrial-tycoon-visual-theme-across-the-entire-frontend-use-a-dark-charcoal-and-gold-color-palette-with-strong-typography-gritty-textures-or-subtle-geometric-patterns-and-a-confident-layout-that-feels-like-a-deal-making-mogul-empire-enforce-this-style-consistently-across-all-pages-and-components",
+      "featureTitle": "Apply a bold, industrial tycoon visual theme across the entire frontend. Use a dark charcoal and gold color palette with strong typography, gritty textures or subtle geometric patterns, and a confident layout that feels like a deal-making mogul empire. Enforce this style consistently across all pages and components.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AddPlayerForm.tsx",
+        "frontend/src/components/PlayerList.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "backend/main.mo": "Motoko actor defining a player management canister with CRUD operations for players (create, read, update score), using a Map for storage and including a blob storage mixin.",
+  "feature_evidence.json": "Feature evidence report mapping two implemented features (React frontend with player list/add form, and industrial tycoon visual theme) to their source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file, describing their roles in the Makeshift Moguls app.",
+  "frontend/index.css": "Global Tailwind CSS entry point defining OKLCH-based CSS custom properties for light and dark color themes used throughout the app.",
+  "frontend/index.html": "Minimal HTML shell for the React app, setting the page title to 'Makeshift Moguls' and mounting the app at the root div.",
+  "frontend/src/App.tsx": "Main React app component rendering the header banner, stats bar (player count and top score), collapsible add-mogul form, and the player leaderboard with a branded footer.",
+  "frontend/src/components/AddPlayerForm.tsx": "Controlled form component for creating new mogul players, with inline validation, loading state, and gold-accented industrial styling.",
+  "frontend/src/components/PlayerList.tsx": "Leaderboard component rendering players sorted by rank with rank badges, coin icons, score display, and hover-revealed ±10 score adjustment buttons.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an authenticated or anonymous backend actor using Internet Identity, invalidating dependent queries when the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and hook for Internet Identity authentication on the ICP platform, managing login state, identity persistence, and AuthClient lifecycle.",
+  "frontend/src/hooks/useQueries.ts": "Defines TanStack Query hooks for fetching and mutating player data (get all, get one, create, update score) via the backend actor.",
+  "frontend/src/index.css": "Global stylesheet importing Google Fonts and defining a dark charcoal/gold tycoon theme via Tailwind CSS custom properties and utility classes.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom gold/charcoal color tokens, display fonts, border radii, and box shadows matching the tycoon visual theme.",
+  "project_state.json": "Tracks project metadata, existing features, and pending feature requests for the Makeshift Moguls app, including backend and frontend build tasks."
+}
